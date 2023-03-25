@@ -1,0 +1,190 @@
+body {
+  background-color: #2e2e2e;
+  font-family: system-ui, sans-serif;
+  margin: 20px auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  text-transform: capitalize;
+  transition: 0.6s;
+  font-weight: bold;
+  border-radius: 10px;
+
+  scroll-behavior: smooth;
+}
+
+.cruds {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+
+}
+.head {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.inputs {
+  display: grid;
+  justify-content: center;
+}
+
+#name,
+#category,
+#submit,
+#search,
+#delete,
+button {
+  width: 100%;
+  background-color: #0a0909;
+  padding: 10px 15px;
+  border: 1px solid black;
+  margin: 10px;
+  color: white;
+  border-radius: 10px;
+}
+input:hover {
+  box-shadow: 0px 0px 10px 0px #000;
+}
+
+.price,
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.price input {
+  width: calc(100% / 4);
+  background-color: #0a0909;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 2px;
+  color: white;
+}
+
+small,
+.totaly {
+  background-color: steelblue;
+  padding: 8px;
+  color: white;
+  margin: 10px;
+}
+
+button#submit,
+.search input,
+#delete,
+button {
+  background-color: steelblue;
+  color: white;
+  cursor: pointer;
+}
+
+.search input {
+  width: calc(100% / 2);
+  padding: 10px 15px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+table {
+  width: 100%;
+  color: white;
+  text-align: left;
+  margin: 8px;
+  padding: 2px;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: right;
+    font-size: 9px;
+  }
+  th,
+  td {
+    border-radius: 0;
+    padding: 4px;
+    border-collapse: collapse;
+    border-right: 1px solid navajowhite;
+    border-bottom: 1px solid navajowhite;
+  }
+  #name,
+  #category,
+  #submit,
+  #search,
+  select {
+    width: calc(100% - 6px);
+    background-color: #0a0909;
+    padding: 6px;
+    margin: 3px;
+    border-radius: 5px;
+  }
+  small {
+    background-color: steelblue;
+    font-size: 11px;
+    padding: 6px;
+    color: white;
+  }
+}
+
+.bigTotal {
+  background-color: rgb(6, 37, 41);
+}
+#update,
+#delete2 {
+  background-color: steelblue;
+  cursor: pointer;
+}
+
+footer {
+}
+
+footer p {
+  font-size: 25px;
+}
+
+footer p a {
+  display: block;
+  color: var(--main-color);
+  color:steelblue;
+  font-weight: bold;
+  font-family: cursive;
+  text-decoration: none;
+}
